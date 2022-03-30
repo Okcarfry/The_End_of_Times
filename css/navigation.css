@@ -5,9 +5,11 @@ body {
 }
 
 header { 
-  background-image:url(../img/explosion_maybe2.gif);
+  background-image:url("../img/explosion.gif");
   background-repeat:no-repeat; 
   background-size: cover;
+  background-position: center;
+  height: 15rem;
 }
 
 .start{
