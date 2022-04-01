@@ -4,9 +4,9 @@ body {
   margin: 0;
 }
 
-header { 
-  background-image:url("../img/explosion.gif");
-  background-repeat:no-repeat; 
+.header {
+  background-image: url("../img/explosion.gif");
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 15rem;
@@ -14,25 +14,29 @@ header {
   margin-bottom: 30px;
 }
 
-.start{
+.start {
   margin: 10px;
 }
 
 .title {
-    text-align: center;
-    font-family: "Times New Roman", Times, Serif;
-    font-size: 60px;
-    margin: 0;
-    margin-bottom: 30px;
-    color: white;
+  text-align: center;
+  font-family: "Times New Roman", Times, Serif;
+  font-size: 60px;
+  margin: 0;
+  margin-bottom: 30px;
+  color: white;
 
+}
+
+.hamburger-menu button {
+  display: none;
 }
 
 .mindblown {
   display: block;
   max-width: 100%;
   height: auto;
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 #math-title {
@@ -54,88 +58,113 @@ header {
 }
 
 ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    background-color: #2b2b2b;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #2b2b2b;
 }
 
+.home {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #2b2b2b;
+  text-decoration: none;
+  color: white;
+}
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 li a, .dropbtn {
-    display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover, .dropdown:hover .dropbtn {
-    background-color: #5a5a5a;
-  }
-  
-  li.dropdown {
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #5a5a5a;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 @media screen and (max-width: 480px) {
-    ul{
-        background-color: black;
-        position: relative;
-        flex-direction: column;
-        
-    }
-    body{
-        background-color: rgb(61, 55, 55);
-        color: white;
-    }
-    .title {
-      text-align: center;
-      font-family: "Times New Roman", Times, Serif;
-      font-size: 25px;
-      margin: 0;
-      margin-bottom: 30px;
-      color: white;
-  
+  ul {
+    background-color: black;
+    position: relative;
+    flex-direction: column;
+    display: none;
   }
-  .start{
+
+  .hamburger-menu button {
+    display: block;
+
+  }
+
+  .hamburger-menu.open ul {
+    display: flex;
+
+  }
+
+  body {
+    background-color: rgb(61, 55, 55);
+    color: white;
+  }
+
+  .title {
+    text-align: center;
+    font-family: "Times New Roman", Times, Serif;
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 30px;
+    color: white;
+
+  }
+
+  .start {
     margin: 10px;
-    color:white;
+    color: white;
   }
-  
-  .mindblown{
+
+  .mindblown {
     max-width: 100%;
   }
 }
@@ -153,7 +182,7 @@ li a, .dropbtn {
 }
 
 @media (min-width: 800px) {
-  .mindblown{
+  .mindblown {
     float: right;
     max-width: calc(10rem + 30%);
   }
