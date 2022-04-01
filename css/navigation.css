@@ -62,9 +62,6 @@ ul {
     background-color: #2b2b2b;
 }
 
-li {
-    float: left;
-}
 
 li a {
     display: block;
@@ -118,6 +115,7 @@ li a, .dropbtn {
         background-color: black;
         position: relative;
         flex-direction: column;
+        
     }
     body{
         background-color: rgb(61, 55, 55);
@@ -126,7 +124,7 @@ li a, .dropbtn {
     .title {
       text-align: center;
       font-family: "Times New Roman", Times, Serif;
-      font-size: 30px;
+      font-size: 25px;
       margin: 0;
       margin-bottom: 30px;
       color: white;
@@ -135,5 +133,28 @@ li a, .dropbtn {
   .start{
     margin: 10px;
     color:white;
+  }
+  
+  .mindblown{
+    max-width: 100%;
+  }
+}
+
+@media (prefers-color-scheme:dark) {
+  body {
+    background-color: hsl(0, 0%, 9%);
+    padding: 0;
+    margin: 0;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+@media (min-width: 800px) {
+  .mindblown{
+    float: right;
+    max-width: calc(10rem + 30%);
   }
 }
