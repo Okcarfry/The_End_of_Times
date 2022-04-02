@@ -37,6 +37,7 @@ body {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+  
 }
 
 #math-title {
@@ -185,5 +186,6 @@ li.dropdown {
   .mindblown {
     float: right;
     max-width: calc(10rem + 30%);
+    height: auto;
   }
 }
