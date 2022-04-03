@@ -22,7 +22,6 @@ body {
   margin: 0;
   margin-bottom: 30px;
   color: white;
-
 }
 
 .hamburger-menu button {
@@ -34,7 +33,6 @@ body {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
-  
 }
 
 .sub-page-title {
@@ -46,7 +44,6 @@ body {
   padding-bottom: 20px;
   background-color: orange;
 }
-
 
 .start {
   font-size: 20px;
@@ -71,7 +68,7 @@ ul {
   margin: 0;
   padding: 10px;
   text-decoration: none;
-  background-color: #2b2b2b; 
+  background-color: #2b2b2b;
   color: white;
 }
 
@@ -88,7 +85,8 @@ li a {
   text-decoration: none;
 }
 
-li a, .dropbtn {
+li a,
+.dropbtn {
   display: inline-block;
   color: white;
   text-align: center;
@@ -96,7 +94,8 @@ li a, .dropbtn {
   text-decoration: none;
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+li a:hover,
+.dropdown:hover .dropbtn {
   background-color: #5a5a5a;
 }
 
@@ -139,18 +138,15 @@ li.dropdown {
 
   .hamburger-menu button {
     display: block;
-
   }
 
   .hamburger {
-    max-height: auto;
-    max-width: auto;
-
+    height: auto;
+    width: auto;
   }
 
   .hamburger-menu.open ul {
     display: flex;
-
   }
 
   body {
@@ -165,7 +161,6 @@ li.dropdown {
     margin: 0;
     margin-bottom: 30px;
     color: white;
-
   }
 
   .start {
@@ -179,7 +174,7 @@ li.dropdown {
   }
 }
 
-@media (prefers-color-scheme:dark) {
+@media (prefers-color-scheme: dark) {
   body {
     background-color: hsl(0, 0%, 9%);
     padding: 0;
