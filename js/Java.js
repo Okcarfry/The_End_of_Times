@@ -22,3 +22,34 @@ document.addEventListener("mousedown", (event) => {
         setMenuState(false)
     }
 })
+
+let carousel = document.querySelector(".karusell")
+let carouselImages = carousel.querySelector(".bilder")
+let n = 0
+console.log(carouselImages)
+let rightButton = carousel.querySelector("button.right")
+let leftButton = carousel.querySelector("button.left")
+rightButton.addEventListener("click", ()=>{
+    showCarouselItem(1)
+})
+leftButton.addEventListener("click", ()=>{
+    showCarouselItem(-1)
+})
+
+function showCarouselItem(direction) {
+    let imageCount = carouselImages.childElementCount
+    n += direction
+    if(n >= imageCount){
+        n = 0
+    }
+    if(n < 0){
+        n = imageCount - 1
+    }
+
+    for (const image of carouselImages.children) {
+      image.classList.remove("visible")  
+    }
+
+    carouselImages.children[n].classList.add("visible")
+}
+
