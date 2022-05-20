@@ -128,6 +128,28 @@ li.dropdown {
   display: block;
 }
 
+.karusell{
+  display: relative;
+
+}
+.karusell .bilder img {
+  display: none;
+}
+.karusell .bilder img.visible {
+  display: block;
+}
+.karusell button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%)
+}
+.karusell button.left{
+  left: 0;
+}
+.karusell button.right{
+  right: 0;
+}
+
 @media screen and (max-width: 480px) {
   ul {
     background-color: black;
@@ -174,7 +196,8 @@ li.dropdown {
   }
 }
 
-@media (prefers-color-scheme: dark) {
+
+@media(prefers-color-scheme: dark) {
   body {
     background-color: hsl(0, 0%, 9%);
     padding: 0;
@@ -191,5 +214,11 @@ li.dropdown {
     float: right;
     max-width: calc(10rem + 30%);
     height: auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .header {
+    height: 7rem;
   }
 }
